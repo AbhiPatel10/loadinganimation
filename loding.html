@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(255, 255, 255);
+        }
+        .main-div {
+            position: relative;
+            top:10rem;
+            display: grid;
+            place-items: center;
+        }
+        .center-div{
+            width: 15rem;
+            height:15rem;
+            position: relative;
+        }
+        .rotate{
+            position:absolute;
+            width: 15rem;
+            height:15rem;
+            border-right: 10px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            animation: rotate 2s linear infinite;
+
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        h1{
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            color:rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="center-div">
+            <div class="rotate"></div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+</body>
+
+</html>
